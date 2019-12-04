@@ -147,6 +147,10 @@ function restart() {
         x: 29 * unit, 
         y: 28 * unit
     };
+    score = 0;
+    ctx.fillStyle = "white";
+    ctx.font = "25px Changa one";
+    ctx.fillText("score: " + score, 1* unit, 2 * unit);
     game = setInterval(draw, 100);
 }
 //set snake speed and start the game
